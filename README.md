@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+\#  Arizon E-Commerce Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fully functional and responsive e-commerce frontend built with \*\*React.js\*\* and \*\*Tailwind CSS\*\*, featuring product listings, cart functionality, filtering, search, dark mode, and smooth navigation between pages.
 
-## Available Scripts
+\---
 
-In the project directory, you can run:
+\##  Features
 
-### `npm start`
+\-  Responsive design using Tailwind CSS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+\-  Product listing from external API (\[FakeStoreAPI\](https://fakestoreapi.com))
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+\-  Add to Cart with quantity management
 
-### `npm test`
+\-  Cart summary with total price
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+\-  Mini cart dropdown and full cart page
 
-### `npm run build`
+\-  Search bar to find products by title
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+\-  Filter by category and sort by price/rating
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+\-  Dark mode toggle with localStorage persistence
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+\-  Clean component-based structure
 
-### `npm run eject`
+\-  React Router for navigation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+\-  Context API for cart state management
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+\-  Persistent cart using localStorage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+\-  Loading states and graceful error handling
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+\---
 
-## Learn More
+\##  Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+src/ ├── components/ │ ├── Cart.js │ ├── DarkModeToggle.js │ ├── FeaturedProducts.js │ ├── FilterSort.js │ ├── Header.js │ ├── Hero.js │ ├── ProductCard.js │ ├── ProductList.js │ ├── SearchBar.js ├── context/ │ └── CartContext.js ├── pages/ │ ├── CartPage.js │ ├── HomePage.js │ ├── NotFoundPage.js │ ├── ProductListingPage.js ├── App.js ├── index.js └── index.css
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+\---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+\## Getting Started
 
-### Analyzing the Bundle Size
+\### 1. Clone the Repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+git clone https://github.com/your-username/arizon-ecommerce-frontend.git
 
-### Making a Progressive Web App
+cd arizon-ecommerce-frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2\. Install Dependencies
 
-### Advanced Configuration
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3\. Run the Development Server
 
-### Deployment
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Visit: https://arizon-assignment.netlify.app/
 
-### `npm run build` fails to minify
+## API Source
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+All products are fetched from:
+
+https://fakestoreapi.com/products
+
+## Tailwind Setup
+
+Tailwind CSS is installed and configured with
+
+npm install -D tailwindcss postcss autoprefixer
+
+npx tailwindcss init -p
+
+The tailwind.config.js is set with:
+
+content: \["./src/\*\*/\*.{js,jsx}"\],
+
+darkMode: "class",
+
+Tailwind base styles are imported in index.css.
+
+## Technologies Used
+
+React.js
+
+Tailwind CSS
+
+React Router DOM
+
+Context API for State Management
+
+LocalStorage for cart persistence
+
+FakeStore API
+
+JSX & JavaScript
+
+## Bonus Features
+
+1. Dark Mode Toggle
+
+2. Product Search
+
+3. Filter by Category & Sort by Price/Rating
+
+4. Cart persisted in localStorage
+
+5. Smooth Animations with Tailwind Transitions
+
+6. Loading Spinners and API Error Messages
+
+7. Deployment
+
+## Deployed the frontend on:
+
+Netlify
+
+## Author
+
+Veeramreddy Vasanth Sai Reddy
+
+GitHub: https://github.com/Vasanthsai7
+
+Email: vasanthsaireddyveeramreddy@gmail.com
+
+## License
+
+This project is open source and available under the MIT License.
