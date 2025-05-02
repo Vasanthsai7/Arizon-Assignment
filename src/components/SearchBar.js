@@ -1,23 +1,17 @@
-// src/components/SearchBar.js
-import React, { useState } from 'react';
 
-const SearchBar = ({ onSearch }) => {
-  const [query, setQuery] = useState('');
+import React from "react";
 
-  const handleChange = e => {
-    const value = e.target.value;
-    setQuery(value);
-    onSearch(value);
-  };
-
+const SearchBar = ({ searchTerm, setSearchTerm }) => {
   return (
-    <input
-      type="text"
-      value={query}
-      onChange={handleChange}
-      placeholder="Search products..."
-      className="mb-4 w-full p-2 border rounded dark:bg-gray-800 dark:border-gray-600"
-    />
+    <div className="mb-4 w-full">
+      <input
+        type="text"
+        placeholder="Search products..."
+        className="w-full p-2 border rounded-md shadow-sm"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
+    </div>
   );
 };
 
